@@ -1,8 +1,10 @@
 import "./style.css";
 import initParticles from "./particles.js";
+import { initScrolltracker } from "./scrollTracker.js";
 
 initParticles("#particles-js", "/particles.json", () => {
   console.log("particles.js inizializzato");
+  initScrolltracker();
 });
 
 // NAV STYLE

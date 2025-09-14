@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div id="app" class="container app-content">
+      <header>
+        <div class="flex justify-center items-center gap-8 pt-16">
+          <!-- Image and greetings -->
+          <img
+            src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+            alt="My picture"
+            class="rounded-full w-[125px] h-[125px]"
+          />
+          <div
+            class="text-white text-xl bg-white/5 border border-white/10 ring-1 ring-white/5 backdrop-blur-md p-4 rounded-full"
+          >
+            Hi, I'm Emanuele
+          </div>
+        </div>
+
+        <!-- Hero title and nav -->
+        <div class="grid grid-cols-2 justify-center items-center pt-16">
+          <h1
+            class="flex flex-col text-white text-6xl font-bold text-center w-[580px] h-[264px] whitespace-normal wrap-break-word leading-snug"
+          >
+            <span class="text-green-500 mb-8 text-center">
+              Ui/Ux Designer
+            </span>
+            and <br />
+            <span class="text-green-500 mt-8 whitespace-nowrap"
+              >Frontend developer</span
+            >
+          </h1>
+          <!-- NAV -->
+          <nav class="flex justify-center items-cente text-4xl">
+            <ul class="pt-8">
+              <li
+                class="nav-item relative text-white pl-8 py-4 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-1 before:rounded-full before:bg-green-500 hover:scale-110 duration-300"
+              >
+                <a href="#">About me</a>
+              </li>
+              <li
+                class="nav-item text-white/30 relative pl-8 py-4 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-1 before:rounded-full before:bg-green-500 before:opacity-0 hover:scale-110 duration-300"
+              >
+                <a href="#">Experience</a>
+              </li>
+
+              <li
+                class="nav-item text-white/30 relative pl-8 py-4 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-1 before:rounded-full before:bg-green-500 before:opacity-0 hover:scale-110 duration-300"
+              >
+                <a href="#">Projects</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

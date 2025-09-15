@@ -34,7 +34,7 @@
     >
       emanuelecomand137@gmail.com
     </a>
-    <div id="app" class="container app-content">
+    <div id="app" class="container app-content h-screen flex flex-col">
       <div class="flex justify-center items-center gap-12 pt-12">
         <!-- Image and greetings -->
         <img
@@ -48,8 +48,8 @@
           Hi, I'm Emanuele
         </div>
       </div>
-      <div class="grid grid-cols-2 justify-center items-center pt-12">
-        <header>
+      <div class="grid grid-cols-2 pt-12 flex-1 overflow-hidden pb-8">
+        <header class="justify-center items-center">
           <!-- Hero title and nav -->
           <h1
             class="flex flex-col text-white text-5xl font-bold text-center w-[580px] h-[264px] whitespace-normal wrap-break-word leading-snug"
@@ -59,7 +59,7 @@
             </p>
             &
             <span class="text-green-500 mt-8 whitespace-nowrap"
-              >FRONTEND <span class="text-white">developer</span></span
+              >FRONTEND <span class="text-white">Developer</span></span
             >
           </h1>
           <!-- NAV -->
@@ -105,6 +105,47 @@
           </div>
           <!-- <hr class="text-white/30 mt-8" /> -->
         </header>
+        <!-- Main content -->
+        <main
+          class="text-white h-full bg-black/10 border border-white/10 backdrop-blur overflow-y-scroll p-4 rounded-2xl hide-scrollbar"
+        >
+          <!-- ABOUT ME -->
+          <h2 class="text-4xl uppercase">About me</h2>
+          <p class="pt-8 text-xl">
+            Based in Italy, I’m a passionate junior ui/ux designer and frontend
+            developer. My goal is to design and craft beautiful user interfaces
+            that comes with a simple and intuitive experience.
+          </p>
+          <h2 class="text-2xl pt-8 uppercase">Tech stack</h2>
+          <!-- first row -->
+          <div class="grid grid-cols-4 items-center pt-8">
+            <img src="/Html.svg" alt="html logo" />
+            <img src="/Css.svg" alt="html logo" />
+            <img src="/javascript.svg" alt="html logo" />
+            <img src="/NodeJs.svg" alt="html logo" />
+          </div>
+          <!-- second row -->
+          <div class="grid grid-cols-4 items-center pt-8">
+            <img src="/Html.svg" alt="html logo" />
+            <img src="/Css.svg" alt="html logo" />
+            <img src="/javascript.svg" alt="html logo" />
+            <img src="/NodeJs.svg" alt="html logo" />
+          </div>
+          <!-- third row -->
+          <div class="grid grid-cols-4 items-center pt-8">
+            <img src="/Html.svg" alt="html logo" />
+            <img src="/Css.svg" alt="html logo" />
+            <img src="/javascript.svg" alt="html logo" />
+            <img src="/NodeJs.svg" alt="html logo" />
+          </div>
+          <!-- fourth row -->
+          <div class="grid grid-cols-4 items-center pt-8">
+            <img src="/Html.svg" alt="html logo" />
+            <img src="/Css.svg" alt="html logo" />
+            <img src="/javascript.svg" alt="html logo" />
+            <img src="/NodeJs.svg" alt="html logo" />
+          </div>
+        </main>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.min.js"></script>

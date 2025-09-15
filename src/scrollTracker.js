@@ -6,12 +6,17 @@ export function initScrolltracker() {
   const tracker = document.getElementById("scroll-tracker");
   if (!tracker) return;
 
+  const scroller = document.querySelector("main");
+  if (!scroller) {
+    console.warn("main non trovato");
+  }
+
   tracker.style.overflow = "hidden";
 
   let fill = document.querySelector(".scroll-fill");
   if (!fill) {
     fill = document.createElement("div");
-    fill.className = ".scroll-fill";
+    fill.className = "scroll-fill";
     tracker.prepend(fill);
   }
 
@@ -31,7 +36,7 @@ export function initScrolltracker() {
     height: "100%",
     ease: "none",
     scrollTrigger: {
-      start: "top top",
+      scroller: scroller,
       end: "bottom bottom",
       scrub: 0.7,
     },

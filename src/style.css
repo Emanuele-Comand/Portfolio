@@ -10,6 +10,9 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: "Inter", sans-serif;
+}
 
  #particles-js {
   position: fixed;

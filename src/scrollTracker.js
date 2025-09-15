@@ -21,7 +21,7 @@ export function initScrolltracker() {
     right: "0",
     top: "0",
     height: "0%",
-    background: "#10B981",
+    background: "oklch(72.3% 0.219 149.579)",
     zIndex: "0",
     pointerEvents: "none",
     borderRadius: "999px",

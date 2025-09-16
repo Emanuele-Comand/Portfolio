@@ -84,7 +84,7 @@
             </ul>
           </nav>
           <!-- Socials and github -->
-          <div class="flex justify-center items-center gap-40 pt-4">
+          <!-- <div class="flex justify-center items-center gap-40 pt-4">
             <a href="">
               <img
                 src="/linkedIn.svg"
@@ -102,12 +102,11 @@
                 class="h-16"
               />
             </a>
-          </div>
-          <!-- <hr class="text-white/30 mt-8" /> -->
+          </div> -->
         </header>
         <!-- Main content -->
         <main
-          class="text-white h-full bg-black/10 border border-white/10 backdrop-blur overflow-y-scroll p-4 rounded-2xl hide-scrollbar"
+          class="text-white h-120 bg-black/10 border border-white/10 backdrop-blur overflow-y-scroll p-4 rounded-2xl hide-scrollbar"
         >
           <!-- ABOUT ME -->
           <h2 class="text-4xl uppercase">About me</h2>
@@ -152,27 +151,65 @@
           <!-- EDUCATION & EXPIRIENCE -->
           <div class="w-full rounded-2xl border border-white/30 mt-8">
             <!-- ed/exp header w/ toggle buttons -->
+
             <div
               class="grid grid-cols-2 justify-center items-center w-full p-3 rounded-tl-2xl rounded-tr-2xl bg-white/10"
             >
               <button
                 type="button"
-                class="bg-[#2A3259] rounded-full p-2 uppercase cursor-pointer"
+                class="bg-[#2A3259] rounded-full p-2 uppercase cursor-pointer swap-btn"
+                id="education"
               >
                 education
               </button>
-              <button type="button" class="cursor-pointer">EXPIRIENCE</button>
+              <button
+                type="button"
+                class="cursor-pointer swap-btn"
+                id="experience"
+              >
+                EXPIRIENCE
+              </button>
             </div>
+
             <!-- Inner content -->
             <div
-              class="grid grid-cols-[1fr_4fr] max-h-80 pt-8 overflow-y-scroll hide-scrollbar"
+              class="grid grid-cols-[1fr_4fr] swap-grid max-h-80 pt-8 overflow-y-scroll hide-scrollbar"
             >
-              <!-- Inner content tracker -->
+              <!-- Inner content tracker (EDUCATION) -->
               <div class="flex flex-col items-center">
                 <div class="w-12 h-12 rounded-full border-6 border-white"></div>
+
+                <div class="relative">
+                  <div
+                    class="h-40 w-[6px] bg-white before:content-[''] before:absolute before:-top-1 before:left-0 before:right-0 before:h-1 after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-1"
+                  ></div>
+                </div>
+
+                <div class="w-12 h-12 rounded-full border-6 border-white"></div>
+
+                <div class="relative">
+                  <div
+                    class="h-84 w-[6px] bg-white before:content-[''] before:absolute before:-top-1 before:left-0 before:right-0 before:h-1 after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-1"
+                  ></div>
+                </div>
+                <div class="w-12 h-12 rounded-full border-6 border-white"></div>
               </div>
+
+              <!-- Inner content tracker (EXPIRIENCE) -->
+              <div class="flex-col items-center hidden">
+                <div class="w-12 h-12 rounded-full border-6 border-white"></div>
+
+                <div class="relative">
+                  <div
+                    class="h-40 w-[6px] bg-white before:content-[''] before:absolute before:-top-1 before:left-0 before:right-0 before:h-1 after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-1"
+                  ></div>
+                </div>
+              </div>
+
               <!-- Inner content text -->
-              <div class="text-white pb-4">
+
+              <!-- EDUCATION -->
+              <div class="text-white pb-4 swap-content">
                 <!-- Tourism diploma -->
                 <h4 class="font-semibold text-2xl">
                   Technical Diploma in Tourism
@@ -210,6 +247,19 @@
                   and practical use of tools including Adobe XD and Figma for
                   creating mockups, visual designs and interactive prototypes
                   for websites and applications.
+                </p>
+              </div>
+
+              <!-- EXPIRIENCE -->
+              <div class="text-white pb-4 hidden swap-content">
+                <!-- Tourism diploma -->
+                <h4 class="font-semibold text-2xl">
+                  Technical Diploma in Tourism
+                </h4>
+                <h6 class="text-lg pt-4">2018 - I.S.IS. Bonaldo Stringher</h6>
+                <p class="text-lg pt-4">
+                  Technical Diploma with a specialization in Tourism (Upper
+                  Secondary School Diploma — Maturità).
                 </p>
               </div>
             </div>

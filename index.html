@@ -21,16 +21,64 @@
     <title>Vite App</title>
   </head>
   <body>
+    <!-- Intro animation -->
+    <div
+      id="intro"
+      class="intro absolute top-0 left-0 right-0 grid grid-cols-8 h-screen z-50"
+      aria-hidden="false"
+    >
+      <div
+        class="intro-col h-full w-full flex items-center justify-center bg-black"
+      >
+        <span class="intro-letter text-white text-8xl">E</span>
+      </div>
+      <div
+        class="intro-col h-full w-full flex items-center justify-center bg-black"
+      >
+        <span class="intro-letter text-white text-8xl">M</span>
+      </div>
+      <div
+        class="intro-col h-full w-full flex items-center justify-center bg-black"
+      >
+        <span class="intro-letter text-white text-8xl">A</span>
+      </div>
+      <div
+        class="intro-col h-full w-full flex items-center justify-center bg-black"
+      >
+        <span class="intro-letter text-white text-8xl">N</span>
+      </div>
+      <div
+        class="intro-col h-full w-full flex items-center justify-center bg-black"
+      >
+        <span class="intro-letter text-white text-8xl">U</span>
+      </div>
+      <div
+        class="intro-col h-full w-full flex items-center justify-center bg-black"
+      >
+        <span class="intro-letter text-white text-8xl">E</span>
+      </div>
+      <div
+        class="intro-col h-full w-full flex items-center justify-center bg-black"
+      >
+        <span class="intro-letter text-white text-8xl">L</span>
+      </div>
+      <div
+        class="intro-col h-full w-full flex items-center justify-center bg-black"
+      >
+        <span class="intro-letter text-white text-8xl">E</span>
+      </div>
+    </div>
+
     <div id="particles-js"></div>
     <!-- Scroll Tracker -->
     <div
       id="scroll-tracker"
-      class="fixed top-80 right-12 z-50 px-2 py-24 rounded-full font-semibold text-white/30 bg-white/5 backdrop-blur pointer-events-none select-none"
+      class="fixed top-80 right-12 z-40 px-2 py-24 rounded-full font-semibold text-white/30 bg-white/5 backdrop-blur pointer-events-none select-none"
     ></div>
     <!-- Mail to -->
     <a
       href="mailto:emanuelecomand137@gmail.com"
-      class="fixed top-1/2 left-0 -translate-x-1/3 -translate-y-1/2 rotate-90 transform z-50 text-white text-2xl px-3 py-1 rounded-sm"
+      class="fixed top-1/2 left-0 -translate-x-1/3 -translate-y-1/2 rotate-90 transform z-40 text-white text-2xl px-3 py-1 rounded-sm"
     >
       emanuelecomand137@gmail.com
     </a>
@@ -38,9 +86,9 @@
       <div class="flex justify-center items-center gap-12 pt-12">
         <!-- Image and greetings -->
         <img
-          src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+          src="/fotoEmanuele2024.png"
           alt="My picture"
-          class="rounded-full w-[125px] h-[125px]"
+          class="rounded-full w-[125px] h-[125px] bg-cover"
         />
         <div
           class="text-white text-xl bg-white/5 border border-white/10 ring-1 ring-white/5 backdrop-blur-md p-4 rounded-full"

@@ -120,3 +120,14 @@ headerBtn.forEach((btn) => {
     swapTextContent(btn.id);
   });
 });
+
+// MAIN CONTAINER SCROLL WITH NAV
+document.querySelectorAll('nav a[href^="#"]').forEach((a) => {
+  a.addEventListener("click", function (e) {
+    e.preventDefault();
+    const id = this.getAttribute("href").slice(1);
+    const target = document.getElementById(id);
+    if (!target) return;
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+});

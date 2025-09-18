@@ -32,13 +32,20 @@ export function initScrolltracker() {
     borderRadius: "999px",
   });
 
-  gsap.to(fill, {
-    height: "100%",
-    ease: "none",
-    scrollTrigger: {
-      scroller: scroller,
-      end: "bottom bottom",
-      scrub: 0.7,
+  ScrollTrigger.getAll().forEach((st) => st.kill());
+
+  const st = ScrollTrigger.create({
+    scroller: scroller,
+    trigger: scroller,
+    start: "top top",
+    end: () => scroller.scrollHeight - scroller.clientHeight,
+    scrub: 0.7,
+    onUpdate: (self) => {
+      const prog = Number.isFinite(self.progress) ? self.progress : 0;
+      fill.style.height = `${(prog * 100).toFixed(3)}%`;
     },
   });
+
+  window.addEventListener("load", () => ScrollTrigger.refresh());
+  window.addEventListener("resize", () => ScrollTrigger.refresh());
 }

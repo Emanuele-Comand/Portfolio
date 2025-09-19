@@ -30,42 +30,42 @@
       <div
         class="intro-col h-full w-full flex items-center justify-center bg-black"
       >
-        <span class="intro-letter text-white text-8xl">E</span>
+        <span class="intro-letter text-white text-6xl lg:text-8xl">E</span>
       </div>
       <div
         class="intro-col h-full w-full flex items-center justify-center bg-black"
       >
-        <span class="intro-letter text-white text-8xl">M</span>
+        <span class="intro-letter text-white text-6xl lg:text-8xl">M</span>
       </div>
       <div
         class="intro-col h-full w-full flex items-center justify-center bg-black"
       >
-        <span class="intro-letter text-white text-8xl">A</span>
+        <span class="intro-letter text-white text-6xl lg:text-8xl">A</span>
       </div>
       <div
         class="intro-col h-full w-full flex items-center justify-center bg-black"
       >
-        <span class="intro-letter text-white text-8xl">N</span>
+        <span class="intro-letter text-white text-6xl lg:text-8xl">N</span>
       </div>
       <div
         class="intro-col h-full w-full flex items-center justify-center bg-black"
       >
-        <span class="intro-letter text-white text-8xl">U</span>
+        <span class="intro-letter text-white text-6xl lg:text-8xl">U</span>
       </div>
       <div
         class="intro-col h-full w-full flex items-center justify-center bg-black"
       >
-        <span class="intro-letter text-white text-8xl">E</span>
+        <span class="intro-letter text-white text-6xl lg:text-8xl">E</span>
       </div>
       <div
         class="intro-col h-full w-full flex items-center justify-center bg-black"
       >
-        <span class="intro-letter text-white text-8xl">L</span>
+        <span class="intro-letter text-white text-6xl lg:text-8xl">L</span>
       </div>
       <div
         class="intro-col h-full w-full flex items-center justify-center bg-black"
       >
-        <span class="intro-letter text-white text-8xl">E</span>
+        <span class="intro-letter text-white text-6xl lg:text-8xl">E</span>
       </div>
     </div>
 
@@ -73,16 +73,38 @@
     <!-- Scroll Tracker -->
     <div
       id="scroll-tracker"
-      class="fixed top-80 right-12 z-40 px-2 py-24 rounded-full font-semibold text-white/30 bg-white/5 backdrop-blur pointer-events-none select-none"
+      class="fixed top-48 right-8 py-18 lg:top-80 lg:right-12 px-2 lg:py-24 z-40 rounded-full font-semibold text-white/30 bg-white/5 backdrop-blur pointer-events-none select-none"
     ></div>
     <!-- Mail to -->
     <a
       href="mailto:emanuelecomand137@gmail.com"
-      class="fixed top-1/2 left-0 -translate-x-1/3 -translate-y-1/2 rotate-90 transform z-40 text-white text-2xl px-3 py-1 rounded-sm"
+      class="hidden lg:block fixed top-1/2 left-0 -translate-x-1/3 -translate-y-1/2 rotate-90 transform z-40 text-white text-2xl px-3 py-1 rounded-sm"
     >
       emanuelecomand137@gmail.com
     </a>
     <div id="app" class="container app-content h-screen flex flex-col">
+      <!-- Hamburger icon fro tablet and mobile -->
+      <button
+        id="hamburgerBtn"
+        class="lg:hidden fixed top-4 right-4 z-50 p-2 rounded-md bg-white/5 border border-white/10"
+        aria-label="Apri menu"
+        aria-expanded="false"
+      >
+        <svg
+          class="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
       <div class="flex justify-center items-center gap-12 pt-12">
         <!-- Image and greetings -->
         <!-- <img
@@ -101,11 +123,13 @@
           Hi, I'm Emanuele
         </div>
       </div>
-      <div class="grid grid-cols-2 pt-12 flex-1 overflow-hidden pb-8">
-        <header class="justify-center items-center">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 pt-2 lg:pt-12 flex-1 overflow-hidden pb-1 lg:pb-8"
+      >
+        <header class="flex flex-col lg:justify-center lg:items-center">
           <!-- Hero title and nav -->
           <h1
-            class="flex flex-col text-white text-5xl font-bold text-center w-[580px] h-[264px] whitespace-normal wrap-break-word leading-snug"
+            class="flex flex-col items-center justify-center text-white text-2xl lg:text-5xl font-bold text-center w-full lg:w-[580px] h-auto lg:h-[264px] whitespace-normal leading-snug mx-auto"
           >
             <p class="text-green-500 mb-8 text-center">
               UI / UX <span class="text-white">Designer</span>
@@ -116,7 +140,7 @@
             >
           </h1>
           <!-- NAV -->
-          <nav class="flex justify-center items-center text-2xl">
+          <nav class="hidden lg:flex justify-center items-center text-2xl">
             <ul class="pt-8">
               <li
                 class="nav-item relative text-white pl-8 py-4 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-1 before:rounded-full before:bg-green-500 hover:scale-110 duration-300"
@@ -128,7 +152,6 @@
               >
                 <a href="#exp">Experience</a>
               </li>
-
               <li
                 class="nav-item text-white/30 relative pl-8 py-4 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-1 before:rounded-full before:bg-green-500 before:opacity-0 hover:scale-110 duration-300"
               >
@@ -139,51 +162,61 @@
         </header>
         <!-- Main content -->
         <main
-          class="text-white h-120 bg-black/10 border border-white/10 backdrop-blur overflow-y-scroll p-4 rounded-2xl hide-scrollbar"
+          class="text-white h-80 lg:h-120 bg-black/10 border border-white/10 backdrop-blur overflow-y-scroll p-4 rounded-2xl hide-scrollbar"
         >
           <section id="about-me">
             <!-- ABOUT ME -->
-            <h2 class="text-4xl uppercase">About me</h2>
-            <p class="pt-8 text-xl">
+            <h2 class="text-xl lg:text-4xl uppercase">About me</h2>
+            <p class="pt-8 text-sm lg:text-xl">
               Based in Italy, I’m a passionate junior ui/ux designer and
               frontend developer. My goal is to design and craft beautiful user
               interfaces that comes with a simple and intuitive experience.
             </p>
             <!-- Tech stack -->
-            <h3 class="text-2xl pt-8 uppercase">Tech stack</h3>
+            <h3 class="text-lg lg:text-2xl pt-8 uppercase">Tech stack</h3>
             <!-- first row -->
             <div class="grid grid-cols-4 items-center pt-8">
-              <img src="/html.svg" alt="html logo" />
-              <img src="/css.svg" alt="html logo" />
-              <img src="/javascript.svg" alt="html logo" />
-              <img src="/nodeJs.svg" alt="html logo" />
+              <img src="/html.svg" alt="html logo" class="h-20 lg:h-full" />
+              <img src="/css.svg" alt="html logo" class="h-20 lg:h-full" />
+              <img
+                src="/javascript.svg"
+                alt="html logo"
+                class="h-20 lg:h-full"
+              />
+              <img src="/nodeJs.svg" alt="html logo" class="h-20 lg:h-full" />
             </div>
             <!-- second row -->
             <div class="grid grid-cols-4 items-center pt-8">
-              <img src="/react.svg" alt="html logo" />
-              <img src="/redux.svg" alt="html logo" />
-              <img src="/npm.svg" alt="html logo" />
-              <img src="/yarn.svg" alt="html logo" />
+              <img src="/react.svg" alt="html logo" class="h-20 lg:h-full" />
+              <img src="/redux.svg" alt="html logo" class="h-20 lg:h-full" />
+              <img src="/npm.svg" alt="html logo" class="h-20 lg:h-full" />
+              <img src="/yarn.svg" alt="html logo" class="h-20 lg:h-full" />
             </div>
             <!-- third row -->
             <div class="grid grid-cols-4 items-center pt-8">
-              <img src="/tailwind.svg" alt="html logo" />
-              <img src="/bootstrap.svg" alt="html logo" />
-              <img src="/figma.svg" alt="html logo" />
-              <img src="/adobeXd.svg" alt="html logo" />
+              <img src="/tailwind.svg" alt="html logo" class="h-20 lg:h-full" />
+              <img
+                src="/bootstrap.svg"
+                alt="html logo"
+                class="h-20 lg:h-full"
+              />
+              <img src="/figma.svg" alt="html logo" class="h-20 lg:h-full" />
+              <img src="/adobeXd.svg" alt="html logo" class="h-20 lg:h-full" />
             </div>
             <!-- fourth row -->
             <div class="grid grid-cols-4 items-center pt-8">
-              <img src="/git.svg" alt="html logo" />
-              <img src="/github.svg" alt="html logo" />
-              <img src="/vite.svg" alt="html logo" />
-              <img src="/docker.svg" alt="html logo" />
+              <img src="/git.svg" alt="html logo" class="h-20 lg:h-full" />
+              <img src="/github.svg" alt="html logo" class="h-20 lg:h-full" />
+              <img src="/vite.svg" alt="html logo" class="h-20 lg:h-full" />
+              <img src="/docker.svg" alt="html logo" class="h-20 lg:h-full" />
             </div>
             <hr class="text-white/30 mt-12" />
           </section>
           <!-- EDUCATION & EXPIRIENCE -->
           <section id="exp">
-            <h2 class="text-4xl pt-8 uppercase">Education / Experience</h2>
+            <h2 class="text-xl lg:text-4xl pt-8 uppercase">
+              Education / Experience
+            </h2>
             <div class="w-full rounded-2xl border border-white/30 mt-8">
               <!-- ed/exp header w/ toggle buttons -->
               <div
@@ -227,7 +260,7 @@
 
                   <div class="relative">
                     <div
-                      class="h-82 w-[6px] bg-white before:content-[''] before:absolute before:-top-1 before:left-0 before:right-0 before:h-1 after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-1"
+                      class="h-70 lg:h-82 w-[6px] bg-white before:content-[''] before:absolute before:-top-1 before:left-0 before:right-0 before:h-1 after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-1"
                     ></div>
                   </div>
                   <div
@@ -242,7 +275,7 @@
                   ></div>
                   <div class="relative">
                     <div
-                      class="h-120 w-[6px] bg-white before:content-[''] before:absolute before:-top-1 before:left-0 before:right-0 before:h-1 after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-1"
+                      class="h-98 lg:h-120 w-[6px] bg-white before:content-[''] before:absolute before:-top-1 before:left-0 before:right-0 before:h-1 after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-1"
                     ></div>
                   </div>
                   <div
@@ -255,20 +288,22 @@
                 <!-- EDUCATION -->
                 <div class="text-white pb-4 swap-content">
                   <!-- Tourism diploma -->
-                  <h4 class="font-semibold text-2xl">
+                  <h4 class="font-semibold text-lg lg:text-2xl">
                     Technical Diploma in Tourism
                   </h4>
-                  <h6 class="text-lg pt-4">2018 - I.S.IS. Bonaldo Stringher</h6>
-                  <p class="text-lg pt-4">
+                  <h6 class="text-md lg:text-lg pt-4">
+                    2018 - I.S.IS. Bonaldo Stringher
+                  </h6>
+                  <p class="text-sm lg:text-lg pt-4">
                     Technical Diploma with a specialization in Tourism (Upper
                     Secondary School Diploma — Maturità).
                   </p>
                   <!-- Digital manufacturing course -->
-                  <h4 class="font-semibold text-2xl pt-16">
+                  <h4 class="font-semibold text-lg lg:text-2xl pt-16">
                     Digital Manufacturing Course
                   </h4>
-                  <h6 class="text-lg pt-4">2020 - Enaip</h6>
-                  <p class="text-lg pt-4">
+                  <h6 class="text-md lg:text-lg pt-4">2020 - Enaip</h6>
+                  <p class="text-sm lg:text-lg pt-4">
                     The Digital Manufacturing course I attended during 2020 at
                     ENAIP was designed to develop skills across a range of
                     subjects related to the digitalization of business
@@ -277,13 +312,13 @@
                     transformation and included an introductory module on C#.
                   </p>
                   <!-- Jr. full stack designer course -->
-                  <h4 class="font-semibold text-2xl pt-16">
+                  <h4 class="font-semibold text-lg lg:text-2xl pt-16">
                     Jr. full stack designer course
                   </h4>
-                  <h6 class="text-lg pt-4">
+                  <h6 class="text-md lg:text-lg pt-4">
                     2023 - Consorzio Friuli Formazione
                   </h6>
-                  <p class="text-lg pt-4">
+                  <p class="text-sm lg:text-lg pt-4">
                     Already having an autodidactic background in HTML and CSS, I
                     enrolled in the Junior Full-Stack Designer course to deepen
                     my knowledge. The programme enabled advanced study of HTML,
@@ -299,12 +334,14 @@
                 <!-- EXPIRIENCE -->
                 <div class="text-white pb-4 hidden swap-content">
                   <!-- BRAINYWARE STAGE -->
-                  <h4 class="font-semibold text-2xl">
+                  <h4 class="font-semibold text-lg lg:text-2xl">
                     FRONTEND DEVELOPER (STAGE)
                   </h4>
-                  <h6 class="text-lg pt-4">Brainyware SRL – Udine, Italy</h6>
+                  <h6 class="text-md lg:text-lg pt-4">
+                    Brainyware SRL – Udine, Italy
+                  </h6>
                   <p>02/04/2024 – 12/06/2024</p>
-                  <div class="text-lg pt-4">
+                  <div class="text-sm lg:text-lg pt-4">
                     <p class="font-bold uppercase">UI / UX Designer</p>
                     <p>AI chatbot components design.</p>
                     <p class="pt-4">Used softwares:</p>
@@ -312,7 +349,7 @@
                       <li>Figma</li>
                     </ul>
                   </div>
-                  <div class="text-lg pt-4">
+                  <div class="text-sm lg:text-lg pt-4">
                     <p class="font-bold uppercase">Frontend developer</p>
                     <p>
                       Development of AI chatbot interface components using React
@@ -326,12 +363,14 @@
                     </ul>
                   </div>
                   <!-- BRAINYWARE  -->
-                  <h4 class="font-semibold text-2xl pt-8">
+                  <h4 class="font-semibold text-lg lg:text-2xl pt-8">
                     FRONTEND DEVELOPER
                   </h4>
-                  <h6 class="text-lg pt-4">Brainyware SRL – Udine, Italy</h6>
+                  <h6 class="text-md lg:text-lg pt-4">
+                    Brainyware SRL – Udine, Italy
+                  </h6>
                   <p>18/06/2024 – 17/03/2025</p>
-                  <div class="text-lg pt-4">
+                  <div class="text-sm lg:text-lg pt-4">
                     <p class="font-bold uppercase">UI / UX Designer</p>
                     <p>AI chatbot components design.</p>
                     <p class="pt-4">Utilized software:</p>
@@ -339,7 +378,7 @@
                       <li>Figma</li>
                     </ul>
                   </div>
-                  <div class="text-lg pt-4">
+                  <div class="text-sm lg:text-lg pt-4">
                     <p class="font-bold uppercase">Frontend developer</p>
                     <ul class="list-disc pt-4 ml-8">
                       <li>
@@ -365,22 +404,26 @@
               </div>
             </div>
             <div class="pt-8">
-              <a href="/cvEmanueleComand2025.pdf" class="text-2xl underline"
+              <a
+                href="/cvEmanueleComand2025.pdf"
+                class="text-lg lg:text-2xl underline"
                 >DOWNLOAD FULL CV</a
               >
             </div>
             <hr class="text-white/30 mt-12" />
           </section>
           <!-- PROJECTS -->
-          <!-- Atlas today  -->
           <section id="projects">
-            <h2 class="text-4xl pt-8 uppercase gap-16">Projects</h2>
+            <h2 class="text-xl lg:text-4xl pt-8 uppercase gap-16">Projects</h2>
             <div class="grid grid-cols-2">
+              <!-- Atlas today  -->
               <div>
-                <h3 class="uppercase text-xl font-semibold max-w-60 pt-8">
+                <h3
+                  class="uppercase text-lg lg:text-xl font-semibold max-w-60 pt-8"
+                >
                   Atlas today
                 </h3>
-                <p class="pt-2 max-w-56">
+                <p class="pt-2 max-w-40 lg:max-w-56 text-sm lg:text-lg">
                   A news aggregator made with Vite, React and Tailwind css. It
                   use
                   <a href="https://gnews.io/" class="underline"
@@ -398,7 +441,7 @@
                   alt="Random Lock password generator screenshot"
                   class="rounded-xl"
                 />
-                <div class="flex justify-between items-center pt-8">
+                <div class="flex flex-wrap gap-4 items-center pt-8">
                   <div
                     class="bg-green-500 text-center p-1 rounded-full min-w-16"
                   >
@@ -435,10 +478,12 @@
               </div>
               <!-- RandomLockPasswordGenerator -->
               <div class="pt-8">
-                <h3 class="uppercase text-xl font-semibold max-w-60 pt-8">
+                <h3
+                  class="uppercase text-lg lg:text-xl font-semibold max-w-60 pt-8"
+                >
                   Random lock password generator
                 </h3>
-                <p class="pt-2 max-w-56">
+                <p class="pt-2 max-w-40 lg:max-w-56 text-sm lg:text-lg">
                   A simple free password generator. It features filters to
                   choose types of characters of the password and a slider to
                   choose the password length (between 4 and 32 chars). Just a
@@ -451,7 +496,7 @@
                   alt="Random Lock password generator screenshot"
                   class="rounded-xl"
                 />
-                <div class="flex justify-between items-center pt-8">
+                <div class="flex flex-wrap gap-4 items-center pt-8">
                   <div
                     class="bg-green-500 text-center p-1 rounded-full min-w-16"
                   >
@@ -493,10 +538,12 @@
               </div>
               <!-- Watchly -->
               <div class="pt-8">
-                <h3 class="uppercase text-xl font-semibold max-w-60 pt-8">
+                <h3
+                  class="uppercase text-lg lg:text-xl font-semibold max-w-60 pt-8"
+                >
                   Watchly
                 </h3>
-                <p class="pt-2 max-w-56">
+                <p class="pt-2 max-w-40 lg:max-w-56 text-sm lg:text-lg">
                   An hypotetical single product e-commerce made with react,
                   taiwlind css, framer motion, zustand and there is also a 3d
                   model rendered with three fiber. The project has a landing
@@ -564,6 +611,65 @@
         </main>
       </div>
     </div>
+    <!-- Off-canvas sidebar (hidden by default -> translate-x-full). Only on < lg -->
+    <div
+      id="mobileMenuOverlay"
+      class="lg:hidden fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40"
+    ></div>
+
+    <aside
+      id="mobileSidebar"
+      class="lg:hidden fixed top-0 right-0 h-full w-72 max-w-[80%] bg-black/95 border-l border-white/10 z-50 transform translate-x-full transition-transform duration-300"
+    >
+      <div class="p-6 h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <div class="text-white text-xl font-bold">Menu</div>
+          <button
+            id="closeMenuBtn"
+            class="p-2 rounded bg-white/5 border border-white/10"
+            aria-label="Chiudi menu"
+          >
+            <svg
+              class="w-5 h-5 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <nav class="flex-1">
+          <ul class="space-y-4">
+            <li>
+              <a href="#about-me" class="block text-white text-lg">About me</a>
+            </li>
+            <li>
+              <a href="#exp" class="block text-white/80 text-lg">Experience</a>
+            </li>
+            <li>
+              <a href="#projects" class="block text-white/80 text-lg"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mt-auto">
+          <a
+            href="mailto:emanuelecomand137@gmail.com"
+            class="block text-sm text-white/70"
+            >emanuelecomand137@gmail.com</a
+          >
+        </div>
+      </div>
+    </aside>
     <script src="https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.min.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>

@@ -131,3 +131,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Responsive Nav menu
+(function () {
+  const hamburger = document.getElementById("hamburgerBtn");
+  const sidebar = document.getElementById("mobileSidebar");
+  const overlay = document.getElementById("mobileMenuOverlay");
+  const closeBtn = document.getElementById("closeMenuBtn");
+
+  function openMenu() {
+    sidebar.classList.remove("translate-x-full");
+    sidebar.classList.add("translate-x-0");
+    overlay.classList.remove("opacity-0", "pointer-events-none");
+    overlay.classList.add("opacity-100");
+    hamburger.setAttribute("aria-expanded", "true");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeMenu() {
+    sidebar.classList.remove("translate-x-0");
+    sidebar.classList.add("translate-x-full");
+    overlay.classList.remove("opacity-100");
+    overlay.classList.add("opacity-0", "pointer-events-none");
+    hamburger.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+  }
+
+  hamburger && hamburger.addEventListener("click", openMenu);
+  closeBtn && closeBtn.addEventListener("click", closeMenu);
+  overlay && overlay.addEventListener("click", closeMenu);
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeMenu();
+  });
+})();

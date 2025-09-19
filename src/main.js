@@ -1,4 +1,3 @@
-// src/main.js
 import "./style.css";
 import initParticles from "./particles.js";
 import { initScrolltracker } from "./scrollTracker.js";
